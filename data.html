@@ -1,0 +1,66 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SAUCER: data</title><meta name="claude:viewport-fit-sides" content="cover"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap"><style>
+:root{--bg:#fbfcfd;--fg:#1b1f24;--mut:#5d6670;--line:#dde2e8;--panel:#f1f4f7;--a:#1f5fbf;--hot:#b42318;--hotbg:rgba(180,35,24,.10);--ns:#1d7a35;
+--sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0f1216;--fg:#e4e8ed;--mut:#97a1ac;--line:#2a3038;--panel:#161b21;--a:#7fb4ff;--hot:#ff8a80;--hotbg:rgba(255,138,128,.13);--ns:#7ddc94;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1216;--fg:#e4e8ed;--mut:#97a1ac;--line:#2a3038;--panel:#161b21;--a:#7fb4ff;--hot:#ff8a80;--hotbg:rgba(255,138,128,.13);--ns:#7ddc94;color-scheme:dark}
+body{font-family:var(--sans);font-size:16px;margin:0;padding-block:14px 40px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));color:var(--fg);background:var(--bg);line-height:1.55}
+main,header{max-width:980px;margin:0 auto}
+a{color:var(--a)} a:focus-visible{outline:2px solid var(--a);outline-offset:2px}
+header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 24px;padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:8px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--fg)} .brand>span{display:flex;flex-direction:column;line-height:1.15}
+.logo{width:46px;height:29px;flex:none} .lg1,.lg3{fill:none;stroke:var(--a);stroke-width:2;stroke-linecap:round;stroke-linejoin:round} .lg2{fill:var(--a)} .lg3{stroke:var(--hot)}
+.bt{font-weight:600;font-size:1.25em;letter-spacing:.06em} .bs{font-size:.74em;color:var(--mut)}
+nav.top{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:.95em} nav.top b{font-weight:600}
+h1{font-size:2em;line-height:1.15;margin:18px 0 6px;text-wrap:balance} h2{font-size:1.15em;margin:26px 0 6px}
+p,li{max-width:70ch} p{margin:0 0 10px} .lead{font-size:1.1em}
+.mut{color:var(--mut)} .band{font-family:var(--mono);font-size:.92em;white-space:nowrap}
+.hero{margin:14px 0 4px;padding:12px 12px 6px;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+.hero svg{width:100%;height:auto;display:block;font-family:var(--sans)}
+.hn{font-size:13px;font-weight:600;fill:var(--fg)} .ht{font-size:11px;fill:var(--mut)} .hv{font-size:11.5px;fill:var(--hot);font-weight:600;paint-order:stroke;stroke:var(--panel);stroke-width:3.5px}
+.hb{fill:var(--hotbg)} .hp{fill:none;stroke:var(--hot);stroke-width:1.3} .hs{stroke:var(--ns);stroke-width:1.4;stroke-dasharray:4 3} .hsl{font-size:10.5px;fill:var(--ns);font-weight:600;paint-order:stroke;stroke:var(--panel);stroke-width:3px} .h1{stroke:var(--mut);stroke-dasharray:3 3;stroke-width:1} .hf{fill:none;stroke:var(--line)}
+.he{fill:none;stroke:var(--a);stroke-width:1;opacity:.75} .hd{fill:var(--a)} .hm{fill:none;stroke:var(--hot);stroke-width:2.2;stroke-linejoin:round}
+.hero figcaption{font-size:.85em;color:var(--mut);margin-top:6px}
+.hero svg.c1{display:none} @media (max-width:640px){.hero svg.c2{display:none}.hero svg.c1{display:block}}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0 6px}
+.tile{border:1px solid var(--line);border-radius:6px;padding:10px 12px;background:var(--bg)}
+.tile .v{font-family:var(--mono);font-size:1.5em;font-variant-numeric:tabular-nums;font-weight:500;white-space:nowrap} .tile .k{font-size:.85em;color:var(--mut)}
+.tile .er{display:inline-flex;flex-direction:column;font-size:.45em;line-height:1.15;vertical-align:middle;margin-left:4px}
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:8px}
+.item{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border:1px solid var(--line);border-radius:6px;background:var(--panel);text-decoration:none;color:var(--fg);min-width:0}
+.item:hover{border-color:var(--a)} .item .name{color:var(--a);font-weight:600;font-size:1.05em}
+.item .count{font-family:var(--mono);font-size:.8em;color:var(--mut)} .item .what{font-size:.9em}
+dl.facts{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;margin:6px 0 4px;max-width:78ch} dl.facts dt{font-weight:600} dl.facts dd{margin:0}
+@media (max-width:480px){dl.facts{grid-template-columns:1fr} dl.facts dd{margin-bottom:6px}}
+figure.fig{margin:0;min-width:0} .figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:18px} figure.fig img{width:100%;height:auto;background:#fff;border:1px solid var(--line);border-radius:6px;padding:6px;box-sizing:border-box}
+figure.fig figcaption{font-size:.88em;color:var(--mut);margin-top:6px} figure.fig b{color:var(--fg)}
+ul.pubs{list-style:none;padding:0} ul.pubs li{padding:10px 0;border-bottom:1px solid var(--line)} .pt{font-weight:600}
+.gbar{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;margin:10px 0 12px;font-size:.95em}
+.gbar input[type=search]{font:inherit;padding:5px 9px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);min-width:0;width:min(280px,100%)}
+main.wide{max-width:1500px}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.gal a{display:block;text-decoration:none;color:var(--fg);border:1px solid var(--line);border-radius:6px;background:#fff;overflow:hidden;min-width:0}
+.gal a:hover{border-color:var(--a)} .gal a.det{border-color:var(--hot)}
+.gal div{position:relative;overflow:hidden;aspect-ratio:368/432} .gal img{position:absolute;width:800%;height:800%;max-width:none}
+.gal span{display:block;padding:4px 8px 5px;font-size:.8em;background:var(--panel);border-top:1px solid var(--line);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gal span i{font-style:normal;font-family:var(--mono);color:var(--mut);font-size:.92em}
+.note{color:var(--mut);font-size:.85em;margin-top:28px;border-top:1px solid var(--line);padding-top:10px}
+</style></head><body><header><a class="brand" href="index.html"><svg class="logo" viewBox="0 0 48 30" aria-hidden="true"><path d="M15 13.5a9 7.5 0 0 1 18 0" class="lg1"/><ellipse cx="24" cy="15" rx="21" ry="5" class="lg2"/><path d="M3 26H27l2.5 3 2.5-3H45" class="lg3"/></svg><span><span class="bt">Flying Saucers</span><span class="bs">Survey of AGN UFOs: Covering factor and Epoch Recurrence</span></span></a><nav class="top"><a href="index.html">Home</a><a href="aims.html">Aims</a><a href="sample.html">The sample</a><b aria-current="page">Data</b><a href="gallery.html">Gallery</a><a href="publications.html">Publications</a><a href="team.html">Team</a></nav></header><main>
+<h1>Data</h1>
+<dl class="facts">
+<dt>Spectra</dt><dd>EPIC-pn pipeline-processed spectra, optimal binning, C-statistic.</dd>
+<dt>Continuum</dt><dd>Selected with the Bayesian information criterion in the rest-frame <span class="band">2&ndash;12 keV</span>
+band (MYTorus reprocessing, partial and ionised absorbers where required) and checked against published broadband fits.</dd>
+<dt>Line search</dt><dd>Gaussian absorption lines at <span class="band">6.5&ndash;12 keV</span>; lines with an outflow
+velocity above 10,000&nbsp;km/s as Fe&nbsp;XXVI Ly&alpha; (above 7.20&nbsp;keV), as in Tombesi et al. (2010), are UFO
+candidates, lines below this limit near-systemic Fe&nbsp;XXV/XXVI absorption.</dd>
+<dt>Significance</dt><dd>False-alarm probability of each line from 1000 simulations of its spectrum; detections at
+&ge;95 per cent confidence, with 99 per cent for comparison.</dd>
+</dl>
+<div class="menu">
+<a class="item first" href="spectra.html"><span class="name">Spectra</span><span class="count">483 observations</span><span class="what">The EPIC-pn spectrum of every observation with its adopted model and absorption lines; one vector PDF each, and a table of the lines found in each spectrum.</span></a>
+<a class="item" href="tables/sources.html"><span class="name">Sources</span><span class="count">165 AGN</span><span class="what">Position, redshift, optical class, absorption-corrected 2&ndash;10 keV and bolometric luminosity, black hole mass.</span></a>
+<a class="item" href="tables/observations.html"><span class="name">Observations</span><span class="count">483 pn observations</span><span class="what">Date, pn mode and filter, exposure, 4.5&ndash;12 keV counts and pile-up level of each observation.</span></a>
+<a class="item" href="tables/fits.html"><span class="name">Continuum fits</span><span class="count">483 fits</span><span class="what">Adopted continuum model of each observation: components, photon index, column densities, reflection, C-statistic.</span></a>
+<a class="item" href="tables/lines.html"><span class="name">Absorption lines</span><span class="count">296 lines</span><span class="what">Energy, width, equivalent width, &Delta;C, outflow velocity, class and Monte Carlo confidence of every line.</span></a>
+</div>
+<p class="mut" style="font-size:.88em;margin-top:10px">Each table can be filtered and sorted and has a machine-readable CSV version.</p><p class="note">Draft results, 2026-11-17. Companion site of <i>The covering factor and duty cycle of ultra-fast outflows in local AGN: an AI-assisted census of the XMM-Newton archive</i>, Lanzuisi et al., in preparation.</p></main></body></html>
