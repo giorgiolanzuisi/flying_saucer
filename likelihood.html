@@ -1,0 +1,173 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SAUCER: covering factor and duty cycle</title><meta name="claude:viewport-fit-sides" content="cover"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap"><style>
+:root{--bg:#fbfcfd;--fg:#1b1f24;--mut:#5d6670;--line:#dde2e8;--panel:#f1f4f7;--a:#1f5fbf;--hot:#b42318;--hotbg:rgba(180,35,24,.10);--ns:#1d7a35;
+--sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0f1216;--fg:#e4e8ed;--mut:#97a1ac;--line:#2a3038;--panel:#161b21;--a:#7fb4ff;--hot:#ff8a80;--hotbg:rgba(255,138,128,.13);--ns:#7ddc94;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1216;--fg:#e4e8ed;--mut:#97a1ac;--line:#2a3038;--panel:#161b21;--a:#7fb4ff;--hot:#ff8a80;--hotbg:rgba(255,138,128,.13);--ns:#7ddc94;color-scheme:dark}
+body{font-family:var(--sans);font-size:16px;margin:0;padding-block:14px 40px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));color:var(--fg);background:var(--bg);line-height:1.55}
+main,header{max-width:980px;margin:0 auto}
+a{color:var(--a)} a:focus-visible{outline:2px solid var(--a);outline-offset:2px}
+header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 24px;padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:8px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--fg)} .brand>span{display:flex;flex-direction:column;line-height:1.15}
+.logo{width:46px;height:29px;flex:none} .lg1,.lg3{fill:none;stroke:var(--a);stroke-width:2;stroke-linecap:round;stroke-linejoin:round} .lg2{fill:var(--a)} .lg3{stroke:var(--hot)}
+.bt{font-weight:600;font-size:1.25em;letter-spacing:.06em} .bs{font-size:.74em;color:var(--mut)}
+nav.top{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:.95em} nav.top b{font-weight:600}
+h1{font-size:2em;line-height:1.15;margin:18px 0 6px;text-wrap:balance} h2{font-size:1.15em;margin:26px 0 6px}
+p,li{max-width:70ch} p{margin:0 0 10px} .lead{font-size:1.1em}
+.mut{color:var(--mut)} .band{font-family:var(--mono);font-size:.92em;white-space:nowrap}
+.hero{margin:14px 0 4px;padding:12px 12px 6px;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+.hero svg{width:100%;height:auto;display:block;font-family:var(--sans)}
+.hn{font-size:13px;font-weight:600;fill:var(--fg)} .ht{font-size:11px;fill:var(--mut)} .hv{font-size:11.5px;fill:var(--hot);font-weight:600;paint-order:stroke;stroke:var(--panel);stroke-width:3.5px}
+.hb{fill:var(--hotbg)} .hp{fill:none;stroke:var(--hot);stroke-width:1.3} .hs{stroke:var(--ns);stroke-width:1.4;stroke-dasharray:4 3} .hsl{font-size:10.5px;fill:var(--ns);font-weight:600;paint-order:stroke;stroke:var(--panel);stroke-width:3px} .h1{stroke:var(--mut);stroke-dasharray:3 3;stroke-width:1} .hf{fill:none;stroke:var(--line)}
+.he{fill:none;stroke:var(--a);stroke-width:1;opacity:.75} .hd{fill:var(--a)} .hm{fill:none;stroke:var(--hot);stroke-width:2.2;stroke-linejoin:round}
+.hero figcaption{font-size:.85em;color:var(--mut);margin-top:6px}
+.hero svg.c1{display:none} @media (max-width:640px){.hero svg.c2{display:none}.hero svg.c1{display:block}}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0 6px}
+.tile{border:1px solid var(--line);border-radius:6px;padding:10px 12px;background:var(--bg)}
+.tile .v{font-family:var(--mono);font-size:1.5em;font-variant-numeric:tabular-nums;font-weight:500;white-space:nowrap} .tile .k{font-size:.85em;color:var(--mut)}
+.tile .er{display:inline-flex;flex-direction:column;font-size:.45em;line-height:1.15;vertical-align:middle;margin-left:4px}
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:8px}
+.item{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border:1px solid var(--line);border-radius:6px;background:var(--panel);text-decoration:none;color:var(--fg);min-width:0}
+.item:hover{border-color:var(--a)} .item .name{color:var(--a);font-weight:600;font-size:1.05em}
+.item .count{font-family:var(--mono);font-size:.8em;color:var(--mut)} .item .what{font-size:.9em}
+dl.facts{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;margin:6px 0 4px;max-width:78ch} dl.facts dt{font-weight:600} dl.facts dd{margin:0}
+@media (max-width:480px){dl.facts{grid-template-columns:1fr} dl.facts dd{margin-bottom:6px}}
+figure.fig{margin:0;min-width:0} .figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:18px} figure.fig img{width:100%;height:auto;background:#fff;border:1px solid var(--line);border-radius:6px;padding:6px;box-sizing:border-box}
+figure.fig figcaption{font-size:.88em;color:var(--mut);margin-top:6px} figure.fig b{color:var(--fg)}
+ul.pubs{list-style:none;padding:0} ul.pubs li{padding:10px 0;border-bottom:1px solid var(--line)} .pt{font-weight:600}
+.gbar{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;margin:10px 0 12px;font-size:.95em}
+.gbar input[type=search]{font:inherit;padding:5px 9px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);min-width:0;width:min(280px,100%)}
+main.wide{max-width:1500px}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.gal a{display:block;text-decoration:none;color:var(--fg);border:1px solid var(--line);border-radius:6px;background:#fff;overflow:hidden;min-width:0}
+.gal a:hover{border-color:var(--a)} .gal a.det{border-color:var(--hot)}
+.gal div{position:relative;overflow:hidden;aspect-ratio:368/432} .gal img{position:absolute;width:800%;height:800%;max-width:none}
+.gal span{display:block;padding:4px 8px 5px;font-size:.8em;background:var(--panel);border-top:1px solid var(--line);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gal span i{font-style:normal;font-family:var(--mono);color:var(--mut);font-size:.92em}
+.wrap{overflow-x:auto;margin:10px 0 14px} table.lt{border-collapse:collapse;font-size:.85em;font-variant-numeric:tabular-nums}
+table.lt th,table.lt td{padding:4px 9px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap} table.lt th{font-weight:600;background:var(--panel)}
+table.lt td:first-child,table.lt th:first-child,table.lt td.l,table.lt th.l{text-align:left}
+.defs dt{margin-top:8px} .eq{overflow-x:auto;max-width:100%}
+figure.one{margin:14px 0 18px;max-width:900px} figure.one img{width:100%;height:auto;background:#fff;border:1px solid var(--line);border-radius:6px;padding:6px;box-sizing:border-box}
+figure.one figcaption{font-size:.88em;color:var(--mut);margin-top:6px}
+.note{color:var(--mut);font-size:.85em;margin-top:28px;border-top:1px solid var(--line);padding-top:10px}
+</style><script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]]},chtml:{scale:0.95}};</script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script></head><body><header><a class="brand" href="index.html"><svg class="logo" viewBox="0 0 48 30" aria-hidden="true"><path d="M15 13.5a9 7.5 0 0 1 18 0" class="lg1"/><ellipse cx="24" cy="15" rx="21" ry="5" class="lg2"/><path d="M3 26H27l2.5 3 2.5-3H45" class="lg3"/></svg><span><span class="bt">Flying Saucers</span><span class="bs">Survey of AGN UFOs: Covering factor and Epoch Recurrence</span></span></a><nav class="top"><a href="index.html">Home</a><a href="aims.html">Aims</a><a href="sample.html">The sample</a><a href="data.html">Data</a><b aria-current="page">Covering factor</b><a href="gallery.html">Gallery</a><a href="publications.html">Publications</a><a href="team.html">Team</a></nav></header><main>
+<h1>Covering factor and duty cycle: a worked example</h1>
+<p class="lead">How the detections in the repeated observations are turned into the covering factor &Omega; and the duty cycle
+&delta;, step by step, with the numbers of the paper (163 sources, 480 spectra).</p>
+
+<h2>Definitions</h2>
+<dl class="facts defs">
+<dt>Covered source</dt><dd>A source whose line of sight passes through the region that the wind occupies <i>when the wind is
+active</i>. This is a geometric, time-independent property: a covered source stays covered in all its epochs, and in an
+uncovered one the wind, if there is one, is never seen in absorption. The fraction of covered sources is the covering factor &Omega;.</dd>
+<dt>Active wind</dt><dd>The wind is present at a given epoch. In a covered source this happens in each epoch with probability
+&delta; (the duty cycle), independently from epoch to epoch.</dd>
+<dt>Real detection</dt><dd>A detection in an epoch of a covered source in which the wind is active. On average, an epoch has
+a real detection with probability &Omega;&delta;.</dd>
+<dt>Spurious detection</dt><dd>A detection produced by a noise fluctuation in an epoch without an active wind along the line
+of sight (every epoch of an uncovered source, and the epochs of a covered source in which the wind is not active), with
+probability \(f_0 = 1-\mathrm{CL}\) per epoch (false alarm).</dd>
+</dl>
+<p class="mut" style="font-size:.9em">One simplification of the model: an active wind in a covered source is assumed to be always
+detected (detection efficiency 1), so in practice &delta; is the probability that the wind is active <i>and</i> strong enough to be
+detected.</p>
+
+<h2>1. The data</h2>
+<p>For each source \(s\) only two numbers are used: the number of analysed epochs \(N_s\) and the number \(k_s\) of them with a
+detected UFO (at least one clean UFO line with Monte Carlo false-alarm probability \(\le 1-\mathrm{CL}\)). The 163
+sources comprise 87 with one observation and 76 with \(N_s\ge2\) (393 epochs, on average 5.2 per source).
+The confidence level CL enters in two places: it decides which epochs count as detections (\(k_s\) changes with CL), and it
+fixes the false-alarm probability per spectrum, \(f_0=1-\mathrm{CL}\) (0.05 at 95 per cent, 0.01 at 99 per cent), by
+construction of the Monte Carlo calibration.</p>
+<figure class="one"><img src="img/lik_data.png" alt="Distribution of the number of epochs and of the detected epochs per source" loading="lazy">
+<figcaption>Left: number of epochs per source (blue: sources with at least one detection at 95 per cent). Right: detected epochs
+\(k_s\) against \(N_s\) for the multi-epoch sources (points slightly displaced). The red line is the number of spurious
+detections expected in an uncovered source, \(f_0N\): NGC 4151 (25 epochs, one detection) lies on it.</figcaption></figure>
+
+<h2>2. The two fractions and a first estimate</h2>
+<p>Two summary numbers of the multi-epoch sources are the fraction of detected epochs and the fraction of sources detected at
+least once:</p>
+<div class="eq">\[ f_{\rm ep}=\frac{\sum_s k_s}{\sum_s N_s}, \qquad f_{\ge1}=\frac{\#\{s:\ k_s\ge1\}}{\#\{s\}} . \]</div>
+<p>At 95 per cent confidence \(f_{\rm ep}=60/393=0.153\) and \(f_{\ge1}=34/76=0.447\);
+at 99 per cent \(f_{\rm ep}=35/393=0.089\) and \(f_{\ge1}=20/76=0.263\).</p>
+<p>If every detection were real, a source would be covered with probability &Omega; and, if covered, have an active (and
+detected) wind in each epoch with probability &delta;. Then</p>
+<div class="eq">\[ f_{\rm ep}=\Omega\,\delta, \qquad f_{\ge1}=\Omega\,\big\langle 1-(1-\delta)^{N_s}\big\rangle_s . \]</div>
+<p>Two equations in two unknowns: their solution is the <i>two-number estimate</i>, \(\Omega=0.71\) and \(\delta=0.22\) at
+95 per cent, \(\Omega=0.42\) and \(\delta=0.21\) at 99 per cent. The first fraction fixes the product; the second is
+larger because a covered source observed \(N\) times is caught at least once with probability \(1-(1-\delta)^N\), which grows
+with \(N\) and tends to &Omega; for many epochs.</p>
+<figure class="one"><img src="img/lik_twonumber_fp.png" alt="Two-number estimate and probability of spurious detections" loading="lazy">
+<figcaption>Left: the curves \(\Omega\delta=f_{\rm ep}\) (dashed) and \(\Omega\langle1-(1-\delta)^{N_s}\rangle=f_{\ge1}\) (solid) at 95
+(blue) and 99 per cent (orange); open circles: the two-number estimate; filled circles: the maximum of the likelihood with false
+positives (section 4). Right: probability that an uncovered source shows at least one spurious detection in \(N\) epochs.</figcaption></figure>
+
+<h2>3. Why the false alarms change the answer</h2>
+<p>The second equation assumes that every source with \(k_s\ge1\) is covered. But an uncovered source observed \(N\) times is
+&ldquo;detected&rdquo; at least once with probability \(1-(1-f_0)^N\): at 95 per cent this is 5 per cent for one epoch, 23 per cent
+for 5 epochs and 72 per cent for 25 epochs. Summed over the 76 multi-epoch sources, \(\sum_s[1-(1-f_0)^{N_s}]=16.7\) of
+the 34 detected sources would be expected <i>even if no source were covered</i> (3.8 of 20 at 99 per cent).
+The fraction \(f_{\ge1}\) is therefore inflated mostly by the sources with many epochs, and the two-number estimate pushes
+&Omega; up and &delta; down.</p>
+
+<h2>4. The likelihood, source by source</h2>
+<p>The likelihood uses all the pairs \((N_s,k_s)\), not only the two fractions. Each source is either covered (probability
+&Omega;) or uncovered (probability \(1-\Omega\)). In a covered source an epoch shows a detection with probability
+\(q=\delta+(1-\delta)f_0\): either the wind is active, or it is not and a false alarm occurs. In an uncovered source each epoch is
+&ldquo;detected&rdquo; only by a false alarm, with probability \(f_0\):</p>
+<div class="eq">\[ \mathcal{L}_s=\Omega\,B(k_s\,|\,N_s,q)+(1-\Omega)\,B(k_s\,|\,N_s,f_0), \qquad q=\delta+(1-\delta)\,f_0, \]
+\[ B(k\,|\,N,p)=\binom{N}{k}p^k(1-p)^{N-k}, \qquad \ln\mathcal{L}=\sum_s\ln\mathcal{L}_s . \]</div>
+<p>The ratio \(P_s(\mathrm{cov})=\Omega\,B(k_s|N_s,q)/\mathcal{L}_s\) is the probability that source \(s\) is covered, given
+its \(N_s\) and \(k_s\). Examples at 95 per cent (\(f_0=0.05\)), at the maximum of the likelihood (\(q=0.53\)), \(\Omega=0.17\) and
+\(\delta=0.51\); the last column is \(\ln\mathcal{L}_s\) at the two-number estimate (\(\Omega=0.71\), \(\delta=0.22\)).</p>
+<div class="wrap"><table class="lt"><thead><tr><th>Source</th><th class="l">Case</th><th>\(N_s\)</th><th>\(k_s\)</th>
+<th>\(B(k|N,q)\)</th><th>\(B(k|N,f_0)\)</th><th>\(\mathcal{L}_s\)</th><th>\(P_s\)(cov)</th><th>\(\ln\mathcal{L}_s\)</th>
+<th>\(\ln\mathcal{L}_s\) (two-number)</th></tr></thead><tbody><tr><td class=l>HS 1630+2355</td><td class=l>one epoch, no detection</td><td>1</td><td>0</td><td>0.47</td><td>0.95</td><td>0.868</td><td>0.09</td><td>-0.14</td><td>-0.22</td></tr><tr><td class=l>6dF J011424.9-552350</td><td class=l>one epoch, detected</td><td>1</td><td>1</td><td>0.53</td><td>0.05</td><td>0.132</td><td>0.68</td><td>-2.03</td><td>-1.63</td></tr><tr><td class=l>NGC 3227</td><td class=l>several epochs, none detected</td><td>9</td><td>0</td><td>0.00112</td><td>0.63</td><td>0.523</td><td>0.00</td><td>-0.65</td><td>-1.45</td></tr><tr><td class=l>NGC 4151</td><td class=l>many epochs, one detected</td><td>25</td><td>1</td><td>1.81e-07</td><td>0.365</td><td>0.303</td><td>0.00</td><td>-1.19</td><td>-2.21</td></tr><tr><td class=l>PG 0050+124</td><td class=l>few epochs, two detected</td><td>5</td><td>2</td><td>0.292</td><td>0.0214</td><td>0.0674</td><td>0.74</td><td>-2.70</td><td>-1.63</td></tr><tr><td class=l>IRAS 13349+2438</td><td class=l>active in most epochs</td><td>3</td><td>3</td><td>0.149</td><td>0.000125</td><td>0.0254</td><td>1.00</td><td>-3.67</td><td>-4.45</td></tr><tr><td class=l>PDS 456</td><td class=l>active in most epochs</td><td>7</td><td>6</td><td>0.0728</td><td>1.04e-07</td><td>0.0124</td><td>1.00</td><td>-4.39</td><td>-6.90</td></tr></tbody></table></div>
+<ul>
+<li><b>One epoch, no detection</b>: the source is most likely uncovered. With one epoch only the product matters:
+\(\mathcal{L}_s=(1-\Omega\delta)(1-f_0)\).</li>
+<li><b>One epoch, detected</b>: \(\mathcal{L}_s=\Omega\delta+(1-\Omega\delta)f_0\simeq0.09+0.04\), so about one third of these single
+detections are expected to be false alarms.</li>
+<li><b>Several epochs, none detected</b> (NGC 3227, 9 epochs): a covered source with \(\delta=0.51\) would almost surely show
+its wind at least once, so the source is uncovered. Many such sources push &Omega; <i>down</i>.</li>
+<li><b>Many epochs, one detected</b> (NGC 4151, 25 epochs): one detection is exactly what false alarms produce, while a covered
+source with \(\delta=0.51\) would give about 13 detections: \(P_s(\mathrm{cov})=0\). In the two-number estimate this source
+counts as covered.</li>
+<li><b>Wind active in most epochs</b> (IRAS 13349+2438, 3 of 3; PDS 456, 6 of 7): false alarms cannot produce them, so these
+sources are certainly covered, and they require a large &delta;. These two sources pull &delta; <i>up</i>: without them
+\(\delta\simeq0.17\).</li>
+</ul>
+
+<h2>5. Summing over the sources</h2>
+<p>Difference of \(\ln\mathcal{L}\) between the maximum (\(\Omega=0.17\), \(\delta=0.51\)) and the two-number point
+(\(\Omega=0.71\), \(\delta=0.22\)), both with \(f_0=0.05\), by group of sources:</p>
+<div class="wrap"><table class="lt"><thead><tr><th>Group</th><th>Sources</th><th>\(\sum\ln\mathcal{L}_s\) (maximum)</th>
+<th>\(\sum\ln\mathcal{L}_s\) (two-number)</th><th>Difference</th></tr></thead><tbody><tr><td>single epoch, k=0</td><td>78</td><td>-11.0</td><td>-16.9</td><td>+5.9</td></tr><tr><td>single epoch, k=1</td><td>9</td><td>-18.3</td><td>-14.7</td><td>-3.5</td></tr><tr><td>multi-epoch, k=0</td><td>42</td><td>-14.8</td><td>-30.1</td><td>+15.3</td></tr><tr><td>multi-epoch, k=1</td><td>17</td><td>-26.7</td><td>-21.8</td><td>-4.9</td></tr><tr><td>multi-epoch, k &ge; 2</td><td>17</td><td>-49.8</td><td>-43.5</td><td>-6.3</td></tr><tr><td><b>total</b></td><td><b>163</b></td><td><b>-120.6</b></td><td><b>-127.0</b></td><td><b>+6.5</b></td></tr></tbody></table></div>
+<p>The maximum is preferred by \(\Delta\ln\mathcal{L}=6.5\), so that the two-number point lies outside the 95 per cent
+contour. The gain comes from the sources <i>without</i> detections, mostly those with several epochs: a large &Omega; with a small
+&delta; predicts too few sources that remain undetected in all their epochs. The sources with detections prefer the two-number
+point, but less strongly, since at the maximum many of them are explained as false alarms at little cost. The best fit attributes
+20.9 of the 34 detected multi-epoch sources to false alarms only (the sum, over the detected sources, of the
+probability that all their detections are spurious: uncovered, or covered with the wind never active), and 6.2 of 20 at 99 per cent.</p>
+<figure class="one"><img src="img/lik_maps.png" alt="Likelihood maps in the covering factor - duty cycle plane" loading="lazy">
+<figcaption>\(-2\Delta\ln\mathcal{L}\) in the (&Omega;, &delta;) plane, with the 68 and 95 per cent contours (two parameters). Dot:
+maximum; square: two-number estimate; triangle: maximum of the likelihood without false alarms (\(f_0=0\)), close to the
+two-number estimate. Dotted: constant &Omega;&delta; through the maximum.</figcaption></figure>
+<figure class="one"><img src="img/lik_kdist.png" alt="Observed and predicted numbers of sources with k detected epochs" loading="lazy">
+<figcaption>Number of multi-epoch sources with \(k_s\) detected epochs: observed (grey) and predicted by the maximum of the
+likelihood (solid), by the two-number values with the same false-alarm term (dashed), and with no covered sources at all
+(dotted). The two-number values over-predict the sources with 1&ndash;3 detections and under-predict the undetected ones.</figcaption></figure>
+
+<h2>Summary</h2>
+<ul>
+<li><b>Fraction of detected epochs</b>: with false alarms, the expected fraction is \(\Omega q+(1-\Omega)f_0=\Omega\delta+(1-\Omega\delta)f_0\),
+not \(\Omega\delta\). Over all the 480 epochs the observed fraction is 0.144 at 95 per cent (0.081 at 99 per cent), so
+\(\Omega\delta\approx(0.144-0.05)/0.95\simeq0.10\) (0.086 at the maximum, 0.067 at 99 per cent). This is why the product
+&Omega;&delta; is the well-constrained quantity.</li>
+<li><b>Fraction of sources detected at least once</b>: without false alarms it would measure &Omega;. With false alarms, part
+of it comes from sources with many epochs and one or two detections. The likelihood does not use this fraction: it uses the whole
+distribution of \(k_s\) at given \(N_s\).</li>
+<li><b>Confidence level</b>: it selects the detections and sets \(f_0=1-\mathrm{CL}\). At 99 per cent there are fewer detections
+and fewer expected false alarms, so isolated detections in sources with many epochs become more credible; &Omega; is similar at
+the two levels (0.17 and 0.19), while &delta; drops from 0.51 to 0.36.</li>
+</ul><p class="note">Draft results, 2026-11-18. Companion site of <i>The covering factor and duty cycle of ultra-fast outflows in local AGN: an AI-assisted census of the XMM-Newton archive</i>, Lanzuisi et al., in preparation.</p></main></body></html>
