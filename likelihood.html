@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Flying Saucers: covering factor and duty cycle</title><meta name="claude:viewport-fit-sides" content="cover"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap"><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Flying SAUCER: likelihood</title><meta name="claude:viewport-fit-sides" content="cover"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap"><style>
 :root{--bg:#fbfcfd;--fg:#1b1f24;--mut:#5d6670;--line:#dde2e8;--panel:#f1f4f7;--a:#1f5fbf;--hot:#b42318;--hotbg:rgba(180,35,24,.10);--ns:#1d7a35;
 --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0f1216;--fg:#e4e8ed;--mut:#97a1ac;--line:#2a3038;--panel:#161b21;--a:#7fb4ff;--hot:#ff8a80;--hotbg:rgba(255,138,128,.13);--ns:#7ddc94;color-scheme:dark}}
@@ -50,7 +50,7 @@ table.lt td:first-child,table.lt th:first-child,table.lt td.l,table.lt th.l{text
 figure.one{margin:14px 0 18px;max-width:900px} figure.one img{width:100%;height:auto;background:#fff;border:1px solid var(--line);border-radius:6px;padding:6px;box-sizing:border-box}
 figure.one figcaption{font-size:.88em;color:var(--mut);margin-top:6px}
 .note{color:var(--mut);font-size:.85em;margin-top:28px;border-top:1px solid var(--line);padding-top:10px}
-</style><script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]]},chtml:{scale:0.95}};</script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script></head><body><header><a class="brand" href="index.html"><svg class="logo" viewBox="0 0 48 30" aria-hidden="true"><path d="M15 13.5a9 7.5 0 0 1 18 0" class="lg1"/><ellipse cx="24" cy="15" rx="21" ry="5" class="lg2"/><path d="M3 26H27l2.5 3 2.5-3H45" class="lg3"/></svg><span><span class="bt">Flying Saucers</span><span class="bs">Survey of AGN UFOs: Covering factor and Epoch Recurrence</span></span></a><nav class="top"><a href="index.html">Home</a><a href="aims.html">Aims</a><a href="sample.html">The sample</a><a href="data.html">Data</a><b aria-current="page">Covering factor</b><a href="gallery.html">Gallery</a><a href="publications.html">Publications</a><a href="team.html">Team</a></nav></header><main>
+</style><script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]]},chtml:{scale:0.95}};</script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script></head><body><header><a class="brand" href="index.html"><svg class="logo" viewBox="0 0 48 30" aria-hidden="true"><path d="M15 13.5a9 7.5 0 0 1 18 0" class="lg1"/><ellipse cx="24" cy="15" rx="21" ry="5" class="lg2"/><path d="M3 26H27l2.5 3 2.5-3H45" class="lg3"/></svg><span><span class="bt">Flying SAUCER</span><span class="bs">Survey of AGN UFOs: Covering factor and Epoch Recurrence</span></span></a><nav class="top"><a href="index.html">Home</a><a href="aims.html">Aims</a><a href="sample.html">The sample</a><a href="data.html">Data</a><b aria-current="page">Likelihood</b><a href="gallery.html">Gallery</a><a href="publications.html">Publications</a><a href="team.html">Team</a></nav></header><main>
 <h1>Covering factor and duty cycle Likelihood: an example</h1>
 <p class="lead">How the detections in the repeated observations are turned into the covering factor &Omega; and the duty cycle
 &delta;, step by step, with the numbers of the paper (163 sources, 480 spectra).</p>
@@ -110,19 +110,29 @@ the 34 detected sources would be expected <i>even if no source were covered</i> 
 The fraction \(f_{\ge1}\) is therefore inflated mostly by the sources with many epochs, and the two-number estimate pushes
 &Omega; up and &delta; down.</p>
 
-<h2>4. The likelihood, source by source</h2>
+<h2>4. The likelihood and its maximum</h2>
 <p>The likelihood uses all the pairs \((N_s,k_s)\), not only the two fractions. Each source is either covered (probability
 &Omega;) or uncovered (probability \(1-\Omega\)). In a covered source an epoch shows a detection with probability
 \(q=\delta+(1-\delta)f_0\): either the wind is active, or it is not and a false alarm occurs. In an uncovered source each epoch is
 &ldquo;detected&rdquo; only by a false alarm, with probability \(f_0\):</p>
 <div class="eq">\[ \mathcal{L}_s=\Omega\,B(k_s\,|\,N_s,q)+(1-\Omega)\,B(k_s\,|\,N_s,f_0), \qquad q=\delta+(1-\delta)\,f_0, \]
 \[ B(k\,|\,N,p)=\binom{N}{k}p^k(1-p)^{N-k}, \qquad \ln\mathcal{L}=\sum_s\ln\mathcal{L}_s . \]</div>
+<p>The total \(\ln\mathcal{L}\) is computed on a grid of 199 &times; 199 values of &Omega; and &delta; between 0.005 and 0.995,
+and the adopted values are those with the largest \(\ln\mathcal{L}\): \(\Omega=0.17\) and \(\delta=0.51\) at 95 per cent
+(so that \(q=0.53\)), and \(\Omega=0.19\) and \(\delta=0.36\) at 99 per cent. Their 68 per cent intervals come from a
+bootstrap: the 163 sources are resampled with replacement 300 times, and the maximum is found again each time.</p>
+<figure class="one"><img src="img/lik_maps.png" alt="Likelihood maps in the covering factor - duty cycle plane" loading="lazy">
+<figcaption>\(-2\Delta\ln\mathcal{L}\) in the (&Omega;, &delta;) plane, with the 68 and 95 per cent contours (two parameters). Dot:
+maximum; square: two-number estimate of section 2; triangle: maximum of the likelihood without false alarms (\(f_0=0\)), close to
+the two-number estimate. Dotted: constant &Omega;&delta; through the maximum.</figcaption></figure>
+
+<h2>5. What each source contributes</h2>
 <p>The ratio \(P_s(\mathrm{cov})=\Omega\,B(k_s|N_s,q)/\mathcal{L}_s\) is the probability that source \(s\) is covered, given
-its \(N_s\) and \(k_s\). Examples at 95 per cent (\(f_0=0.05\)), at the maximum of the likelihood (\(q=0.53\)), \(\Omega=0.17\) and
-\(\delta=0.51\); the last column is \(\ln\mathcal{L}_s\) at the two-number estimate (\(\Omega=0.71\), \(\delta=0.22\)).</p>
+its \(N_s\) and \(k_s\). Some examples at 95 per cent (\(f_0=0.05\)), evaluated at the maximum (\(\Omega=0.17\),
+\(\delta=0.51\), \(q=0.53\)):</p>
 <div class="wrap"><table class="lt"><thead><tr><th>Source</th><th class="l">Case</th><th>\(N_s\)</th><th>\(k_s\)</th>
 <th>\(B(k|N,q)\)</th><th>\(B(k|N,f_0)\)</th><th>\(\mathcal{L}_s\)</th><th>\(P_s\)(cov)</th><th>\(\ln\mathcal{L}_s\)</th>
-<th>\(\ln\mathcal{L}_s\) (two-number)</th></tr></thead><tbody><tr><td class=l>HS 1630+2355</td><td class=l>one epoch, no detection</td><td>1</td><td>0</td><td>0.47</td><td>0.95</td><td>0.868</td><td>0.09</td><td>-0.14</td><td>-0.22</td></tr><tr><td class=l>6dF J011424.9-552350</td><td class=l>one epoch, detected</td><td>1</td><td>1</td><td>0.53</td><td>0.05</td><td>0.132</td><td>0.68</td><td>-2.03</td><td>-1.63</td></tr><tr><td class=l>NGC 3227</td><td class=l>several epochs, none detected</td><td>9</td><td>0</td><td>0.00112</td><td>0.63</td><td>0.523</td><td>0.00</td><td>-0.65</td><td>-1.45</td></tr><tr><td class=l>NGC 4151</td><td class=l>many epochs, one detected</td><td>25</td><td>1</td><td>1.81e-07</td><td>0.365</td><td>0.303</td><td>0.00</td><td>-1.19</td><td>-2.21</td></tr><tr><td class=l>PG 0050+124</td><td class=l>few epochs, two detected</td><td>5</td><td>2</td><td>0.292</td><td>0.0214</td><td>0.0674</td><td>0.74</td><td>-2.70</td><td>-1.63</td></tr><tr><td class=l>IRAS 13349+2438</td><td class=l>active in most epochs</td><td>3</td><td>3</td><td>0.149</td><td>0.000125</td><td>0.0254</td><td>1.00</td><td>-3.67</td><td>-4.45</td></tr><tr><td class=l>PDS 456</td><td class=l>active in most epochs</td><td>7</td><td>6</td><td>0.0728</td><td>1.04e-07</td><td>0.0124</td><td>1.00</td><td>-4.39</td><td>-6.90</td></tr></tbody></table></div>
+</tr></thead><tbody><tr><td class=l>HS 1630+2355</td><td class=l>one epoch, no detection</td><td>1</td><td>0</td><td>0.47</td><td>0.95</td><td>0.868</td><td>0.09</td><td>-0.14</td></tr><tr><td class=l>6dF J011424.9-552350</td><td class=l>one epoch, detected</td><td>1</td><td>1</td><td>0.53</td><td>0.05</td><td>0.132</td><td>0.68</td><td>-2.03</td></tr><tr><td class=l>NGC 3227</td><td class=l>several epochs, none detected</td><td>9</td><td>0</td><td>0.00112</td><td>0.63</td><td>0.523</td><td>0.00</td><td>-0.65</td></tr><tr><td class=l>NGC 4151</td><td class=l>many epochs, one detected</td><td>25</td><td>1</td><td>1.81e-07</td><td>0.365</td><td>0.303</td><td>0.00</td><td>-1.19</td></tr><tr><td class=l>PG 0050+124</td><td class=l>few epochs, two detected</td><td>5</td><td>2</td><td>0.292</td><td>0.0214</td><td>0.0674</td><td>0.74</td><td>-2.70</td></tr><tr><td class=l>IRAS 13349+2438</td><td class=l>active in most epochs</td><td>3</td><td>3</td><td>0.149</td><td>0.000125</td><td>0.0254</td><td>1.00</td><td>-3.67</td></tr><tr><td class=l>PDS 456</td><td class=l>active in most epochs</td><td>7</td><td>6</td><td>0.0728</td><td>1.04e-07</td><td>0.0124</td><td>1.00</td><td>-4.39</td></tr></tbody></table></div>
 <ul>
 <li><b>One epoch, no detection</b>: the source is most likely uncovered. With one epoch only the product matters:
 \(\mathcal{L}_s=(1-\Omega\delta)(1-f_0)\).</li>
@@ -131,28 +141,17 @@ detections are expected to be false alarms.</li>
 <li><b>Several epochs, none detected</b> (NGC 3227, 9 epochs): a covered source with \(\delta=0.51\) would almost surely show
 its wind at least once, so the source is uncovered. Many such sources push &Omega; <i>down</i>.</li>
 <li><b>Many epochs, one detected</b> (NGC 4151, 25 epochs): one detection is exactly what false alarms produce, while a covered
-source with \(\delta=0.51\) would give about 13 detections: \(P_s(\mathrm{cov})=0\). In the two-number estimate this source
-counts as covered.</li>
+source with \(\delta=0.51\) would give about 13 detections: \(P_s(\mathrm{cov})=0\).</li>
 <li><b>Wind active in most epochs</b> (IRAS 13349+2438, 3 of 3; PDS 456, 6 of 7): false alarms cannot produce them, so these
 sources are certainly covered, and they require a large &delta;. These two sources pull &delta; <i>up</i>: without them
 \(\delta\simeq0.17\).</li>
 </ul>
-
-<h2>5. Summing over the sources</h2>
-<p>Difference of \(\ln\mathcal{L}\) between the maximum (\(\Omega=0.17\), \(\delta=0.51\)) and the two-number point
-(\(\Omega=0.71\), \(\delta=0.22\)), both with \(f_0=0.05\), by group of sources:</p>
-<div class="wrap"><table class="lt"><thead><tr><th>Group</th><th>Sources</th><th>\(\sum\ln\mathcal{L}_s\) (maximum)</th>
-<th>\(\sum\ln\mathcal{L}_s\) (two-number)</th><th>Difference</th></tr></thead><tbody><tr><td>single epoch, k=0</td><td>78</td><td>-11.0</td><td>-16.9</td><td>+5.9</td></tr><tr><td>single epoch, k=1</td><td>9</td><td>-18.3</td><td>-14.7</td><td>-3.5</td></tr><tr><td>multi-epoch, k=0</td><td>42</td><td>-14.8</td><td>-30.1</td><td>+15.3</td></tr><tr><td>multi-epoch, k=1</td><td>17</td><td>-26.7</td><td>-21.8</td><td>-4.9</td></tr><tr><td>multi-epoch, k &ge; 2</td><td>17</td><td>-49.8</td><td>-43.5</td><td>-6.3</td></tr><tr><td><b>total</b></td><td><b>163</b></td><td><b>-120.6</b></td><td><b>-127.0</b></td><td><b>+6.5</b></td></tr></tbody></table></div>
-<p>The maximum is preferred by \(\Delta\ln\mathcal{L}=6.5\), so that the two-number point lies outside the 95 per cent
-contour. The gain comes from the sources <i>without</i> detections, mostly those with several epochs: a large &Omega; with a small
-&delta; predicts too few sources that remain undetected in all their epochs. The sources with detections prefer the two-number
-point, but less strongly, since at the maximum many of them are explained as false alarms at little cost. The best fit attributes
-20.9 of the 34 detected multi-epoch sources to false alarms only (the sum, over the detected sources, of the
-probability that all their detections are spurious: uncovered, or covered with the wind never active), and 6.2 of 20 at 99 per cent.</p>
-<figure class="one"><img src="img/lik_maps.png" alt="Likelihood maps in the covering factor - duty cycle plane" loading="lazy">
-<figcaption>\(-2\Delta\ln\mathcal{L}\) in the (&Omega;, &delta;) plane, with the 68 and 95 per cent contours (two parameters). Dot:
-maximum; square: two-number estimate; triangle: maximum of the likelihood without false alarms (\(f_0=0\)), close to the
-two-number estimate. Dotted: constant &Omega;&delta; through the maximum.</figcaption></figure>
+<p>In total, the maximum attributes 20.9 of the 34 detected multi-epoch sources to false alarms only (the sum, over
+the detected sources, of the probability that all their detections are spurious), and 6.2 of 20 at 99 per cent.</p>
+<p><b>Why the two-number estimate is ruled out.</b> The two-number values (\(\Omega=0.71\), \(\delta=0.22\); square in the
+map) lie outside the 95 per cent contour. The difference comes from the sources observed several times without any detection:
+with a large &Omega; and a small &delta;, many of them should have shown at least one detection. In the likelihood they are
+uncovered, and the isolated detections in sources with many epochs, such as NGC 4151, are explained as false alarms.</p>
 <figure class="one"><img src="img/lik_kdist.png" alt="Observed and predicted numbers of sources with k detected epochs" loading="lazy">
 <figcaption>Number of multi-epoch sources with \(k_s\) detected epochs: observed (grey) and predicted by the maximum of the
 likelihood (solid), by the two-number values with the same false-alarm term (dashed), and with no covered sources at all
