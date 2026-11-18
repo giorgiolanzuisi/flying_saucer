@@ -141,7 +141,9 @@ detections are expected to be false alarms.</li>
 <li><b>Several epochs, none detected</b> (NGC 3227, 9 epochs): a covered source with \(\delta=0.51\) would almost surely show
 its wind at least once, so the source is uncovered. Many such sources push &Omega; <i>down</i>.</li>
 <li><b>Many epochs, one detected</b> (NGC 4151, 25 epochs): one detection is exactly what false alarms produce, while a covered
-source with \(\delta=0.51\) would give about 13 detections: \(P_s(\mathrm{cov})=0\).</li>
+source with \(\delta=0.51\) would give about 13 detections, so that \(P_s(\mathrm{cov})=0\). This does not mean that NGC 4151
+has no wind: XRISM/Resolve has revealed a stratified wind with several UFO components (<a href="https://arxiv.org/abs/2507.09210">Xiang et al. 2025</a>), mostly too weak and
+broad to be detected at the resolution of the pn (see below).</li>
 <li><b>Wind active in most epochs</b> (IRAS 13349+2438, 3 of 3; PDS 456, 6 of 7): false alarms cannot produce them, so these
 sources are certainly covered, and they require a large &delta;. These two sources pull &delta; <i>up</i>: without them
 \(\delta\simeq0.17\).</li>
@@ -151,11 +153,11 @@ the detected sources, of the probability that all their detections are spurious)
 <p><b>Why the two-number estimate is ruled out.</b> The two-number values (\(\Omega=0.71\), \(\delta=0.22\); square in the
 map) lie outside the 95 per cent contour. The difference comes from the sources observed several times without any detection:
 with a large &Omega; and a small &delta;, many of them should have shown at least one detection. In the likelihood they are
-uncovered, and the isolated detections in sources with many epochs, such as NGC 4151, are explained as false alarms.</p>
-<figure class="one"><img src="img/lik_kdist.png" alt="Observed and predicted numbers of sources with k detected epochs" loading="lazy">
-<figcaption>Number of multi-epoch sources with \(k_s\) detected epochs: observed (grey) and predicted by the maximum of the
-likelihood (solid), by the two-number values with the same false-alarm term (dashed), and with no covered sources at all
-(dotted). The two-number values over-predict the sources with 1&ndash;3 detections and under-predict the undetected ones.</figcaption></figure>
+uncovered, and isolated detections in sources with many epochs are explained as false alarms.</p>
+<p><b>What &ldquo;covered&rdquo; means in practice.</b> The model knows only the detections of our search, so &ldquo;uncovered&rdquo;
+here means &ldquo;without a wind detectable in pn spectra&rdquo;. NGC 4151 (25 epochs, one detection) is treated as uncovered, but
+XRISM/Resolve has revealed a stratified wind with several UFO components (<a href="https://arxiv.org/abs/2507.09210">Xiang et al. 2025</a>), mostly too weak and broad to be
+detected at CCD resolution. Cases like this make &Omega;&delta; a lower limit.</p>
 
 <h2>Summary</h2>
 <ul>
