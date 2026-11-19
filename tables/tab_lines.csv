@@ -1,23 +1,134 @@
 NAME,OBSID,E_REST_KEV,SIGMA_EV,EW_EV,DELTA_C,V_OUT_C,CLASS,P_FALSE,N_EXCEED,CONT_DEP,BAND_EDGE,LINE_STATS,FEK_EDGE,KBETA,KBETA_VEXC,DET95,DET99,FE_PAIR,WIDE_PREF
+1ES 1927+654,0863230201,6.777,100,-83.1,12.05,,near-systemic,,,False,False,False,False,False,False,False,False,False,False
+1ES 1927+654,0915390701,9.538,10,-315.4,13.25,0.304,UFO,,,False,False,False,False,False,False,False,False,False,False
+CGMW 3-4394,0891010201,9.653,100,-69.7,12.81,0.315,UFO,0.009,9,False,False,True,False,False,False,True,True,False,False
+CGMW 3-4394,0891010201,10.208,100,-97.4,16.43,0.364,UFO,0.001,0,False,False,True,False,False,False,True,True,False,False
+CGMW 3-4394,0550451701,11.723,10,-515.4,13.8,0.478,UFO,0.011,11,False,True,True,False,False,False,False,False,False,False
+CGMW 3-4394,0761870201,11.34,100,-127.4,8.52,0.452,UFO,0.075,75,False,False,True,False,False,False,False,False,False,False
+CGMW 3-4394,0891010101,10.181,10,-98.3,17.43,0.362,UFO,0.004,4,False,False,True,False,False,False,True,True,False,False
+ESO 33-2,0863050201,6.942,100,-116.0,96.44,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
+ESO 198-24,0112910101,10.715,100,-320.4,15.2,0.405,UFO,0.003,3,False,False,True,False,False,False,True,True,False,False
+ESO 198-24,0930590601,10.092,10,-156.9,9.31,0.354,UFO,0.065,65,False,False,True,False,False,False,False,False,False,False
+ESO 263-13,0501210101,8.105,10,-116.8,13.04,0.15,UFO,0.016,16,False,False,True,False,False,False,True,False,False,False
+ESO 263-13,0501210101,9.852,100,-155.1,8.23,0.333,UFO,0.13,130,False,False,True,False,False,False,False,False,False,False
+ESO 323-77,0300240501,6.717,10,-77.6,37.27,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
+ESO 323-77,0300240501,7.044,100,-154.7,64.2,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
+ESO 323-77,0300240501,7.716,100,-100.2,23.57,0.101,UFO,0.001,0,False,False,True,False,False,False,True,True,False,False
+ESO 323-77,0300240501,8.381,100,-116.4,23.38,,near-systemic,0.001,0,False,False,True,False,True,False,False,False,False,False
+ESO 323-77,0300240501,9.048,10,-87.3,13.19,0.294,UFO,0.034,34,True,False,True,False,False,False,True,False,True,False
+ESO 323-77,0300240501,9.508,100,-109.4,10.61,0.294,UFO,,,True,False,True,False,False,False,False,False,True,False
+ESO 323-77,0694170101,7.882,10,-58.6,11.24,0.122,UFO,0.028,28,False,False,True,False,False,False,True,False,False,False
+ESO 323-77,0694170101,8.35,10,-63.1,10.49,0.179,UFO,0.05,50,False,False,True,False,False,False,True,False,False,False
+ESO 362-18,0610180101,10.146,10,-74.7,9.91,0.359,UFO,0.069,69,False,False,True,False,False,False,False,False,False,False
+ESO 383-18,0307000901,6.942,100,-78.6,10.16,,near-systemic,0.053,53,False,False,True,False,False,False,False,False,False,False
+ESO 511-30,0502090201,10.548,10,-54.9,10.43,0.392,UFO,0.033,33,False,False,True,False,False,False,True,False,False,False
+Fairall 9,0605800401,9.824,10,-47.5,11.64,0.33,UFO,0.023,23,False,False,True,False,False,False,True,False,False,False
+FAIRALL 49,0724820101,9.459,10,-50.0,21.58,0.296,UFO,0.001,0,False,False,True,False,False,False,True,True,False,False
+FAIRALL 49,0724820101,11.058,100,-75.2,10.32,0.431,UFO,0.051,51,False,False,True,False,False,False,False,False,False,False
+FAIRALL 49,0724820101,11.668,100,-111.5,12.65,0.474,UFO,0.014,14,False,True,True,False,False,False,False,False,False,False
+FAIRALL 49,0724820201,11.319,100,-110.5,11.12,0.45,UFO,0.022,22,False,False,True,False,False,False,True,False,False,False
+FAIRALL 49,0795690101,9.711,100,-70.2,8.48,0.32,UFO,0.094,94,False,False,True,False,False,False,False,False,False,False
+HE 1143-1810,0201130201,10.171,10,-61.2,8.65,0.361,UFO,0.119,119,False,False,True,False,False,False,False,False,False,False
+HE 1143-1810,0795580301,10.97,10,-102.9,9.16,0.425,UFO,0.058,58,False,False,True,False,False,False,False,False,False,False
+I Zw 1,0300470101,8.758,10,-89.7,10.75,0.225,UFO,0.035,35,False,False,True,False,False,False,True,False,False,False
+I Zw 1,0743050301,8.836,10,-174.0,15.75,0.233,UFO,0.005,5,False,False,True,False,False,False,True,True,False,False
+IC 486,0504101201,9.56,100,-178.5,9.24,0.306,UFO,0.061,61,False,False,True,False,False,False,False,False,False,False
+IC 4329A,0862090201,11.631,10,-107.3,10.83,0.472,UFO,0.036,36,False,True,True,False,False,False,False,False,False,False
+IC 4329A,0862090601,9.194,10,-69.4,13.28,0.306,UFO,0.001,1,False,False,True,False,False,False,True,True,True,False
+IC 4329A,0862090601,9.549,10,-68.7,10.77,0.306,UFO,,,False,False,True,False,False,False,False,False,True,False
+IC 4329A,0862091001,11.165,100,-93.4,11.66,0.439,UFO,0.019,19,False,False,True,False,False,False,True,False,False,False
+IGR J12026-5349,0601740601,9.812,100,-106.7,9.49,0.329,UFO,0.063,63,False,False,True,False,False,False,False,False,False,False
+IGR J13109-5552,0550450901,10.306,10,-186.9,10.23,0.372,UFO,0.024,24,False,False,True,False,False,False,True,False,False,False
+IGR J21277+5656,0693781701,11.263,10,-54.1,8.66,0.446,UFO,0.091,91,False,False,True,False,False,False,False,False,False,False
+IRAS 05078+1626,0502090501,9.926,100,-55.2,8.01,0.34,UFO,0.133,133,False,False,True,False,False,False,False,False,False,False
+IRAS 05189-2524,0722610101,8.151,10,-92.1,8.24,0.155,UFO,0.102,102,False,False,True,False,False,False,False,False,False,False
+IRAS 09149-6206,0830490101,7.036,100,-74.4,46.89,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
+IRAS 13349+2438,0402080301,7.824,100,-140.9,15.77,0.153,UFO,0.003,3,False,False,True,False,False,False,True,True,True,False
+IRAS 13349+2438,0402080301,8.158,10,-108.6,10.14,0.153,UFO,,,True,False,True,False,False,False,False,False,True,False
+IRAS 13349+2438,0402080301,8.69,100,-124.4,10.32,0.217,UFO,0.065,65,True,False,True,False,False,False,False,False,False,False
+IRAS 13349+2438,0402080301,10.932,100,-216.7,11.22,0.422,UFO,0.045,45,True,False,True,False,False,False,True,False,False,False
+IRAS 13349+2438,0402080201,6.548,10,-60.7,9.19,,near-systemic,0.102,102,True,False,True,False,False,False,False,False,False,False
+IRAS 13349+2438,0402080201,8.101,10,-129.5,14.96,0.149,UFO,0.009,9,False,False,True,False,False,False,True,True,False,False
+IRAS 13349+2438,0852390101,7.917,100,-166.5,15.33,0.162,UFO,0.002,2,False,False,True,False,False,False,True,True,True,False
+IRAS 13349+2438,0852390101,8.235,10,-139.1,8.23,0.162,UFO,,,False,False,True,False,False,False,False,False,True,False
+IRAS 13349+2438,0852390101,9.196,100,-180.5,13.94,0.27,UFO,0.002,2,False,False,True,False,False,False,True,True,False,False
+IRAS 13349+2438,0852390101,10.542,10,-234.9,12.37,0.392,UFO,0.012,12,False,False,True,False,False,False,True,False,False,False
+IRAS 17020+4544,0721220101,10.38,10,-188.6,12.43,0.378,UFO,0.013,13,False,False,True,False,False,False,True,False,False,False
+IRAS 17020+4544,0721220101,11.186,100,-281.3,10.0,0.441,UFO,0.048,48,False,False,True,False,False,False,True,False,False,False
+IRAS 23226-3843,0840800501,7.954,10,-65.0,11.05,0.131,UFO,0.026,26,False,False,True,False,False,False,True,False,False,False
+IRAS F12397+3333,0843020601,7.704,10,-67.1,9.23,0.1,UFO,0.049,49,False,False,True,False,False,False,True,False,False,False
+MCG+7-37-31,0672660401,11.344,10,-318.5,13.49,0.452,UFO,0.009,9,False,False,True,False,False,False,True,True,False,False
+MCG-3-34-64,0763220201,6.821,100,-95.3,38.28,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
+MCG-3-34-64,0763220201,7.147,10,-123.3,25.49,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
+MCG-3-34-64,0763220201,8.09,100,-81.8,9.55,,near-systemic,0.068,68,False,False,True,False,True,False,False,False,False,False
+MCG-3-34-64,0763220201,8.565,100,-108.1,11.33,,near-systemic,0.029,29,False,False,True,False,True,True,False,False,False,False
+MCG-3-34-64,0763220201,9.23,10,-115.8,19.42,0.274,UFO,0.001,0,False,False,True,False,False,False,True,True,False,False
+MCG-3-34-64,0206580101,6.805,10,-62.4,12.6,,near-systemic,0.019,19,False,False,True,False,False,False,False,False,False,False
+MCG-3-34-64,0206580101,7.108,100,-139.1,33.79,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
+MCG-3-34-64,0206580101,9.61,10,-106.9,8.24,0.311,UFO,0.121,121,False,False,True,False,False,False,False,False,False,False
+MCG-3-34-64,0506340101,6.863,10,-79.5,16.04,,near-systemic,0.004,4,False,False,True,False,False,False,False,False,False,False
+MCG-3-34-64,0506340101,7.111,100,-148.4,46.14,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
+MCG-3-34-64,0506340101,8.007,100,-106.5,20.59,,near-systemic,0.001,0,False,False,True,False,True,False,False,False,False,False
+MCG-3-34-64,0506340101,8.495,100,-134.2,22.9,,near-systemic,0.001,0,False,False,True,False,True,False,False,False,False,False
+MCG-3-34-64,0506340101,8.909,10,-82.7,9.92,0.241,UFO,0.051,51,False,False,True,False,False,False,False,False,False,False
+MCG-03-58-007,0840230301,8.935,100,-119.2,14.36,0.243,UFO,0.004,4,False,False,True,False,False,False,True,True,False,False
+MCG-03-58-007,0840230301,9.694,100,-144.3,14.03,0.318,UFO,0.004,4,True,False,True,False,False,False,True,True,False,False
+MCG-03-58-007,0840230301,11.428,100,-308.8,15.79,0.458,UFO,0.002,2,False,False,True,False,False,False,True,True,False,False
+MCG-03-58-007,0764010101,7.314,10,-71.0,10.15,0.048,UFO,0.035,35,False,False,True,False,False,False,True,False,False,True
+MCG-03-58-007,0840230201,8.198,10,-123.5,16.77,0.161,UFO,0.001,0,False,False,True,False,False,False,True,True,False,False
+MCG-03-58-007,0840230201,10.654,100,-244.2,11.41,0.401,UFO,0.02,20,False,False,True,False,False,False,True,False,False,False
+MCG-03-58-007,0840230401,7.892,100,-160.1,29.25,0.124,UFO,0.001,0,False,False,True,False,False,False,True,True,False,False
+MCG-03-58-007,0840230401,8.556,10,-119.1,12.48,0.202,UFO,0.01,10,False,False,True,False,False,False,True,True,False,False
+MCG-5-23-16,0727960101,9.415,100,-14.9,8.22,0.292,UFO,0.114,114,False,False,True,False,False,False,False,False,False,False
+MCG-5-23-16,0890670101,9.011,100,-25.2,10.74,0.251,UFO,0.028,28,False,False,True,False,False,False,True,False,False,False
+MCG-6-30-15,0029740701,8.842,10,-23.0,10.35,0.234,UFO,0.037,37,False,False,True,False,False,False,True,False,False,False
+MR 2251-178,0670120301,6.924,100,-19.7,19.01,,near-systemic,0.002,2,False,False,True,False,False,False,False,False,False,False
+MR 2251-178,0670120301,10.437,10,-26.6,8.25,0.416,UFO,,,False,False,True,False,False,False,False,False,True,False
+MR 2251-178,0670120301,10.848,10,-46.0,20.64,0.416,UFO,0.002,2,False,False,True,False,False,False,True,True,True,False
+MR 2251-178,0670120301,11.885,100,-65.0,11.04,0.488,UFO,0.034,34,False,True,True,False,False,False,False,False,False,False
+MR 2251-178,0012940101,6.906,10,-21.1,8.66,,near-systemic,0.121,121,False,False,True,False,False,False,False,False,False,False
+MR 2251-178,0670120201,6.784,100,-23.3,29.41,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
+MR 2251-178,0670120201,9.577,100,-27.1,10.2,0.307,UFO,0.047,47,False,False,True,False,False,False,True,False,False,False
+MR 2251-178,0670120201,10.331,10,-26.5,9.15,0.374,UFO,0.075,75,False,False,True,False,False,False,False,False,False,False
+MR 2251-178,0670120401,6.579,100,-15.5,13.69,,near-systemic,0.009,9,False,False,True,False,False,False,False,False,False,False
+MR 2251-178,0670120401,11.772,100,-52.0,9.7,0.481,UFO,0.063,63,False,True,True,False,False,False,False,False,False,False
+MR 2251-178,0763920601,6.704,10,-22.6,8.91,,near-systemic,0.08,80,False,False,True,False,False,False,False,False,False,False
+MR 2251-178,0763920701,6.634,10,-26.4,13.78,,near-systemic,0.007,7,False,False,True,False,False,False,False,False,False,False
+MR 2251-178,0763920801,6.612,10,-24.2,12.72,,near-systemic,0.017,17,False,False,True,False,False,False,False,False,False,False
+Mrk 6,0061540101,9.401,10,-73.2,8.9,0.291,UFO,0.099,99,False,False,True,False,False,False,False,False,False,False
+Mrk 110,0852590201,11.747,10,-139.0,13.64,0.479,UFO,0.012,12,False,True,True,False,False,False,False,False,False,False
+Mrk 290,0400360201,10.487,100,-179.5,8.16,0.387,UFO,0.146,146,False,False,True,False,False,False,False,False,False,False
 Mrk 335,0741280201,7.008,100,-76.7,15.0,,near-systemic,0.002,2,False,False,True,False,False,False,False,False,False,False
 Mrk 335,0741280201,9.754,100,-133.6,8.58,0.324,UFO,0.079,79,False,False,True,False,False,False,False,False,False,False
 Mrk 335,0780500301,8.654,10,-159.3,12.13,0.213,UFO,0.019,19,False,False,True,False,False,False,True,False,False,False
 Mrk 335,0854590401,11.469,10,-349.6,13.14,0.461,UFO,0.015,15,False,True,True,False,False,False,False,False,False,False
-I Zw 1,0300470101,8.758,10,-89.7,10.75,0.225,UFO,0.035,35,False,False,True,False,False,False,True,False,False,False
-I Zw 1,0743050301,8.836,10,-174.0,15.75,0.233,UFO,0.005,5,False,False,True,False,False,False,True,True,False,False
-NGC 454E,0605090301,6.853,100,-112.8,13.68,,near-systemic,0.012,12,False,False,True,False,False,False,False,False,False,False
-NGC 454E,0605090301,8.103,100,-141.2,8.86,,near-systemic,0.113,113,False,False,True,False,True,False,False,False,False,False
-NGC 454E,0605090301,9.409,10,-195.8,16.06,0.291,UFO,0.004,4,False,False,True,False,False,False,True,True,False,False
-Fairall 9,0605800401,9.824,10,-47.5,11.64,0.33,UFO,0.023,23,False,False,True,False,False,False,True,False,False,False
+Mrk 509,0306090401,8.531,10,-26.1,11.91,0.199,UFO,0.028,28,False,False,True,False,False,False,True,False,False,False
+Mrk 766,0109141301,9.01,100,-43.9,10.36,0.251,UFO,0.038,38,False,False,True,False,False,False,True,False,False,False
+Mrk 766,0109141301,9.563,100,-57.0,12.32,0.306,UFO,0.02,20,False,False,True,False,False,False,True,False,False,False
+Mrk 766,0304030101,6.985,10,-42.0,16.19,,near-systemic,0.002,2,False,False,True,False,False,False,False,False,False,False
+Mrk 766,0304030301,7.123,100,-38.8,12.04,,near-systemic,0.026,26,False,False,True,False,False,False,False,False,False,False
+Mrk 766,0304030401,8.713,10,-44.7,11.0,0.22,UFO,0.043,43,False,False,True,False,False,False,True,False,False,False
+Mrk 817,0872390901,6.969,100,-76.5,60.91,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
+Mrk 817,0872390901,8.122,10,-34.5,8.43,,near-systemic,0.13,130,False,False,True,False,True,False,False,False,False,False
+Mrk 817,0882340701,6.975,10,-40.9,18.97,,near-systemic,0.001,1,False,False,True,False,False,False,False,False,False,False
+Mrk 817,0882340801,6.917,10,-47.6,21.52,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
+Mrk 817,0911990201,7.049,100,-72.1,16.62,,near-systemic,0.001,1,False,False,True,False,False,False,False,False,False,False
 Mrk 1044,0824080501,10.31,10,-66.8,8.26,0.373,UFO,0.105,105,False,False,True,False,False,False,False,False,False,False
 Mrk 1044,0824080501,10.892,100,-103.6,9.76,0.419,UFO,0.052,52,False,False,True,False,False,False,False,False,False,False
 Mrk 1044,0824080401,10.249,100,-87.2,11.02,0.367,UFO,0.033,33,False,False,True,False,False,False,True,False,False,False
 Mrk 1044,0824080401,11.418,10,-152.9,16.55,0.457,UFO,0.001,1,False,False,True,False,False,False,True,True,False,False
 Mrk 1044,0841820201,9.966,100,-76.0,8.75,0.343,UFO,0.078,78,False,False,True,False,False,False,False,False,False,False
 Mrk 1044,0841820201,10.665,100,-138.1,16.35,0.401,UFO,0.001,1,False,False,True,False,False,False,True,True,False,False
+Mrk 1239,0891070101,7.01,100,-208.4,96.96,,near-systemic,,,False,False,False,False,False,False,False,False,False,False
+Mrk 1239,0891070101,7.461,100,-199.9,65.39,0.068,UFO,,,False,False,False,False,False,False,False,False,False,False
+Mrk 1239,0891070101,8.053,100,-162.0,34.92,0.143,UFO,,,False,False,False,False,False,False,False,False,False,False
+Mrk 1239,0891070101,8.757,100,-154.0,20.6,0.224,UFO,,,False,False,False,False,False,False,False,False,False,False
+Mrk 1239,0891070101,9.394,100,-147.5,12.67,0.29,UFO,,,False,False,False,False,False,False,False,False,False,False
+Mrk 1383,0852210101,7.221,10,-41.0,8.98,0.035,UFO,0.072,72,False,False,True,False,False,False,False,False,False,False
+NGC 454E,0605090301,6.853,100,-112.8,13.68,,near-systemic,0.012,12,False,False,True,False,False,False,False,False,False,False
+NGC 454E,0605090301,8.103,100,-141.2,8.86,,near-systemic,0.113,113,False,False,True,False,True,False,False,False,False,False
+NGC 454E,0605090301,9.409,10,-195.8,16.06,0.291,UFO,0.004,4,False,False,True,False,False,False,True,True,False,False
 NGC 985,0743830601,6.784,10,-24.4,14.61,,near-systemic,0.008,8,False,False,True,False,False,False,False,False,False,False
-ESO 198-24,0112910101,10.715,100,-320.4,15.2,0.405,UFO,0.003,3,False,False,True,False,False,False,True,True,False,False
-ESO 198-24,0930590601,10.092,10,-156.9,9.31,0.354,UFO,0.065,65,False,False,True,False,False,False,False,False,False,False
 NGC 1052,0553300401,9.473,10,-93.5,14.26,0.298,UFO,0.006,6,False,False,True,False,False,False,True,True,False,False
 NGC 1052,0553300401,11.584,100,-184.1,9.71,0.468,UFO,0.056,56,False,True,True,False,False,False,False,False,False,False
 NGC 1052,0790980101,9.361,100,-104.5,14.72,0.287,UFO,0.004,4,False,False,True,False,False,False,True,True,False,False
@@ -38,16 +149,6 @@ NGC 1365,0205590401,7.969,10,-73.0,11.89,,near-systemic,0.032,32,False,False,Tru
 NGC 1365,0205590401,8.296,100,-101.9,13.7,,near-systemic,0.011,11,False,False,True,False,True,False,False,False,False,False
 NGC 1365,0692840201,6.726,10,-30.9,14.88,,near-systemic,0.001,1,False,False,True,False,False,False,False,False,False,False
 NGC 1365,0692840201,7.033,10,-22.6,9.63,,near-systemic,0.053,53,False,False,True,False,False,False,False,False,False,False
-RBS 542,0604720301,7.176,10,-29.5,12.74,,near-systemic,0.018,18,False,False,True,False,False,False,False,False,False,False
-RBS 542,0820360201,6.985,100,-55.4,18.47,,near-systemic,0.001,1,False,False,True,False,False,False,False,False,False,False
-ESO 33-2,0863050201,6.942,100,-116.0,96.44,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
-IRAS 05078+1626,0502090501,9.926,100,-55.2,8.01,0.34,UFO,0.133,133,False,False,True,False,False,False,False,False,False,False
-ESO 362-18,0610180101,10.146,10,-74.7,9.91,0.359,UFO,0.069,69,False,False,True,False,False,False,False,False,False,False
-IRAS 05189-2524,0722610101,8.151,10,-92.1,8.24,0.155,UFO,0.102,102,False,False,True,False,False,False,False,False,False,False
-Mrk 6,0061540101,9.401,10,-73.2,8.9,0.291,UFO,0.099,99,False,False,True,False,False,False,False,False,False,False
-IC 486,0504101201,9.56,100,-178.5,9.24,0.306,UFO,0.061,61,False,False,True,False,False,False,False,False,False,False
-IRAS 09149-6206,0830490101,7.036,100,-74.4,46.89,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
-Mrk 110,0852590201,11.747,10,-139.0,13.64,0.479,UFO,0.012,12,False,True,True,False,False,False,False,False,False,False
 NGC 2992,0840920201,9.889,10,-19.0,9.6,0.336,UFO,0.062,62,False,False,True,False,False,False,False,False,False,False
 NGC 2992,0840920201,11.13,100,-33.2,9.65,0.437,UFO,0.061,61,False,False,True,False,False,False,False,False,False,False
 NGC 2992,0840920201,11.766,100,-58.1,18.0,0.48,UFO,0.002,2,False,True,True,False,False,False,False,False,False,False
@@ -58,15 +159,6 @@ NGC 2992,0654910801,9.335,10,-111.2,10.74,0.284,UFO,0.031,31,False,False,True,Fa
 NGC 2992,0654911001,9.532,100,-113.8,8.16,0.303,UFO,0.116,116,False,False,True,False,False,False,False,False,False,False
 NGC 2992,0654911001,9.976,10,-114.9,8.86,0.344,UFO,0.087,87,False,False,True,False,False,False,False,False,False,False
 NGC 2992,0840920301,11.722,100,-49.9,11.6,0.478,UFO,0.021,21,False,True,True,False,False,False,False,False,False,False
-MCG-5-23-16,0727960101,9.415,100,-14.9,8.22,0.292,UFO,0.114,114,False,False,True,False,False,False,False,False,False,False
-MCG-5-23-16,0890670101,9.011,100,-25.2,10.74,0.251,UFO,0.028,28,False,False,True,False,False,False,True,False,False,False
-Mrk 1239,0891070101,7.01,100,-208.4,96.96,,near-systemic,,,False,False,False,False,False,False,False,False,False,False
-Mrk 1239,0891070101,7.461,100,-199.9,65.39,0.068,UFO,,,False,False,False,False,False,False,False,False,False,False
-Mrk 1239,0891070101,8.053,100,-162.0,34.92,0.143,UFO,,,False,False,False,False,False,False,False,False,False,False
-Mrk 1239,0891070101,8.757,100,-154.0,20.6,0.224,UFO,,,False,False,False,False,False,False,False,False,False,False
-Mrk 1239,0891070101,9.394,100,-147.5,12.67,0.29,UFO,,,False,False,False,False,False,False,False,False,False,False
-ESO 263-13,0501210101,8.105,10,-116.8,13.04,0.15,UFO,0.016,16,False,False,True,False,False,False,True,False,False,False
-ESO 263-13,0501210101,9.852,100,-155.1,8.23,0.333,UFO,0.13,130,False,False,True,False,False,False,False,False,False,False
 NGC 3227,0782520501,6.698,10,-14.7,9.42,,near-systemic,0.072,72,False,False,True,False,False,False,False,False,False,False
 NGC 3516,0401210401,6.73,100,-52.2,55.21,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
 NGC 3516,0401210401,7.011,10,-40.6,33.96,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
@@ -88,13 +180,6 @@ NGC 3516,0401211001,6.773,10,-38.7,51.22,,near-systemic,0.001,0,False,False,True
 NGC 3516,0401211001,7.058,10,-44.8,50.49,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
 NGC 3516,0401211001,7.859,10,-26.2,11.69,,near-systemic,0.014,14,False,False,True,False,True,False,False,False,False,False
 NGC 3516,0401211001,8.238,10,-28.1,10.59,,near-systemic,0.034,34,False,False,True,False,True,False,False,False,False,False
-PG 1126-041,0606150101,6.945,10,-122.3,27.38,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
-PG 1126-041,0606150101,7.297,10,-193.6,9.84,0.084,UFO,0.001,0,False,False,True,False,False,False,True,True,True,False
-PG 1126-041,0606150101,7.55,10,-142.3,9.84,0.084,UFO,,,False,False,True,False,False,False,False,False,True,False
-PG 1126-041,0606150101,8.146,100,-146.2,14.46,,near-systemic,0.007,7,True,False,True,False,True,False,False,False,False,False
-PG 1126-041,0606150101,8.747,100,-202.6,20.49,0.223,UFO,0.001,0,False,False,True,False,False,False,True,True,False,False
-PG 1126-041,0606150101,10.091,100,-290.3,23.04,0.354,UFO,0.001,0,False,False,True,False,False,False,True,True,False,False
-RXS J11319-1231,0820830101,10.614,10,-77.1,13.0,0.397,UFO,0.009,9,False,False,True,False,False,False,True,True,False,False
 NGC 3783,0112210501,6.729,10,-13.8,21.88,,near-systemic,0.001,1,False,False,True,False,False,False,False,False,False,False
 NGC 3783,0112210501,7.802,100,-15.9,10.1,,near-systemic,0.087,87,True,False,True,False,True,False,False,False,False,False
 NGC 3783,0112210501,9.263,100,-31.3,19.29,0.277,UFO,0.003,3,False,False,True,False,False,False,True,True,False,False
@@ -106,9 +191,6 @@ NGC 3783,0780860901,8.314,10,-25.8,8.61,0.175,UFO,0.095,95,False,False,True,Fals
 NGC 3783,0780861001,6.973,10,-52.8,49.82,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
 NGC 3783,0780861001,7.483,100,-37.8,11.36,0.071,UFO,0.012,12,True,False,True,False,False,False,True,False,False,False
 NGC 3783,0780861001,7.995,100,-44.7,11.01,0.136,UFO,0.019,19,False,False,True,False,False,False,True,False,False,False
-HE 1143-1810,0201130201,10.171,10,-61.2,8.65,0.361,UFO,0.119,119,False,False,True,False,False,False,False,False,False,False
-HE 1143-1810,0795580301,10.97,10,-102.9,9.16,0.425,UFO,0.058,58,False,False,True,False,False,False,False,False,False,False
-IGR J12026-5349,0601740601,9.812,100,-106.7,9.49,0.329,UFO,0.063,63,False,False,True,False,False,False,False,False,False,False
 NGC 4051,0606321601,7.028,10,-38.5,17.09,,near-systemic,0.003,3,False,False,True,False,False,False,False,False,False,False
 NGC 4051,0109141401,7.082,10,-47.3,58.97,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
 NGC 4051,0109141401,8.162,100,-38.3,11.43,0.157,UFO,0.026,26,True,False,True,False,False,False,True,False,False,False
@@ -156,60 +238,11 @@ NGC 4151,0761670801,7.738,100,-13.8,8.58,,near-systemic,0.11,110,False,False,Tru
 NGC 4151,0761670901,6.734,100,-30.5,83.64,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
 NGC 4151,0761670901,8.055,100,-21.1,15.24,,near-systemic,0.005,5,False,False,True,False,True,False,False,False,False,False
 NGC 4151,0861680101,6.938,10,-8.6,15.54,,near-systemic,0.003,3,False,False,True,False,False,False,False,False,False,False
-Mrk 766,0109141301,9.01,100,-43.9,10.36,0.251,UFO,0.038,38,False,False,True,False,False,False,True,False,False,False
-Mrk 766,0109141301,9.563,100,-57.0,12.32,0.306,UFO,0.02,20,False,False,True,False,False,False,True,False,False,False
-Mrk 766,0304030101,6.985,10,-42.0,16.19,,near-systemic,0.002,2,False,False,True,False,False,False,False,False,False,False
-Mrk 766,0304030301,7.123,100,-38.8,12.04,,near-systemic,0.026,26,False,False,True,False,False,False,False,False,False,False
-Mrk 766,0304030401,8.713,10,-44.7,11.0,0.22,UFO,0.043,43,False,False,True,False,False,False,True,False,False,False
 NGC 4395,0824610101,11.557,100,-182.4,15.02,0.467,UFO,0.004,4,False,True,True,False,False,False,False,False,False,False
 NGC 4395,0142830101,11.903,10,-255.3,8.07,0.489,UFO,0.128,128,False,True,True,False,False,False,False,False,False,False
 NGC 4395,0744010101,7.002,10,-70.1,18.13,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
 NGC 4593,0740920501,9.412,100,-94.9,11.63,0.292,UFO,0.018,18,False,False,True,False,False,False,True,False,False,False
-IRAS F12397+3333,0843020601,7.704,10,-67.1,9.23,0.1,UFO,0.049,49,False,False,True,False,False,False,True,False,False,False
-PG 1244+026,0675320101,8.547,10,-92.5,10.22,0.201,UFO,0.045,45,False,False,True,False,False,False,True,False,False,False
-PG 1244+026,0675320101,9.435,10,-141.7,15.18,0.294,UFO,0.007,7,False,False,True,False,False,False,True,True,False,False
-PG 1244+026,0744440101,9.647,10,-191.9,9.79,0.314,UFO,0.051,51,False,False,True,False,False,False,False,False,False,False
-PG 1244+026,0744440501,7.588,10,-135.2,22.19,0.085,UFO,0.001,0,False,False,True,False,False,False,True,True,False,False
-ESO 323-77,0300240501,6.717,10,-77.6,37.27,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
-ESO 323-77,0300240501,7.044,100,-154.7,64.2,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
-ESO 323-77,0300240501,7.716,100,-100.2,23.57,0.101,UFO,0.001,0,False,False,True,False,False,False,True,True,False,False
-ESO 323-77,0300240501,8.381,100,-116.4,23.38,,near-systemic,0.001,0,False,False,True,False,True,False,False,False,False,False
-ESO 323-77,0300240501,9.048,10,-87.3,13.19,0.294,UFO,0.034,34,True,False,True,False,False,False,True,False,True,False
-ESO 323-77,0300240501,9.508,100,-109.4,10.61,0.294,UFO,,,True,False,True,False,False,False,False,False,True,False
-ESO 323-77,0694170101,7.882,10,-58.6,11.24,0.122,UFO,0.028,28,False,False,True,False,False,False,True,False,False,False
-ESO 323-77,0694170101,8.35,10,-63.1,10.49,0.179,UFO,0.05,50,False,False,True,False,False,False,True,False,False,False
-IGR J13109-5552,0550450901,10.306,10,-186.9,10.23,0.372,UFO,0.024,24,False,False,True,False,False,False,True,False,False,False
-MCG-3-34-64,0763220201,6.821,100,-95.3,38.28,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
-MCG-3-34-64,0763220201,7.147,10,-123.3,25.49,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
-MCG-3-34-64,0763220201,8.09,100,-81.8,9.55,,near-systemic,0.068,68,False,False,True,False,True,False,False,False,False,False
-MCG-3-34-64,0763220201,8.565,100,-108.1,11.33,,near-systemic,0.029,29,False,False,True,False,True,True,False,False,False,False
-MCG-3-34-64,0763220201,9.23,10,-115.8,19.42,0.274,UFO,0.001,0,False,False,True,False,False,False,True,True,False,False
-MCG-3-34-64,0206580101,6.805,10,-62.4,12.6,,near-systemic,0.019,19,False,False,True,False,False,False,False,False,False,False
-MCG-3-34-64,0206580101,7.108,100,-139.1,33.79,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
-MCG-3-34-64,0206580101,9.61,10,-106.9,8.24,0.311,UFO,0.121,121,False,False,True,False,False,False,False,False,False,False
-MCG-3-34-64,0506340101,6.863,10,-79.5,16.04,,near-systemic,0.004,4,False,False,True,False,False,False,False,False,False,False
-MCG-3-34-64,0506340101,7.111,100,-148.4,46.14,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
-MCG-3-34-64,0506340101,8.007,100,-106.5,20.59,,near-systemic,0.001,0,False,False,True,False,True,False,False,False,False,False
-MCG-3-34-64,0506340101,8.495,100,-134.2,22.9,,near-systemic,0.001,0,False,False,True,False,True,False,False,False,False,False
-MCG-3-34-64,0506340101,8.909,10,-82.7,9.92,0.241,UFO,0.051,51,False,False,True,False,False,False,False,False,False,False
-ESO 383-18,0307000901,6.942,100,-78.6,10.16,,near-systemic,0.053,53,False,False,True,False,False,False,False,False,False,False
-MCG-6-30-15,0029740701,8.842,10,-23.0,10.35,0.234,UFO,0.037,37,False,False,True,False,False,False,True,False,False,False
-IRAS 13349+2438,0402080301,7.824,100,-140.9,15.77,0.153,UFO,0.003,3,False,False,True,False,False,False,True,True,True,False
-IRAS 13349+2438,0402080301,8.158,10,-108.6,10.14,0.153,UFO,,,True,False,True,False,False,False,False,False,True,False
-IRAS 13349+2438,0402080301,8.69,100,-124.4,10.32,0.217,UFO,0.065,65,True,False,True,False,False,False,False,False,False,False
-IRAS 13349+2438,0402080301,10.932,100,-216.7,11.22,0.422,UFO,0.045,45,True,False,True,False,False,False,True,False,False,False
-IRAS 13349+2438,0402080201,6.548,10,-60.7,9.19,,near-systemic,0.102,102,True,False,True,False,False,False,False,False,False,False
-IRAS 13349+2438,0402080201,8.101,10,-129.5,14.96,0.149,UFO,0.009,9,False,False,True,False,False,False,True,True,False,False
-IRAS 13349+2438,0852390101,7.917,100,-166.5,15.33,0.162,UFO,0.002,2,False,False,True,False,False,False,True,True,True,False
-IRAS 13349+2438,0852390101,8.235,10,-139.1,8.23,0.162,UFO,,,False,False,True,False,False,False,False,False,True,False
-IRAS 13349+2438,0852390101,9.196,100,-180.5,13.94,0.27,UFO,0.002,2,False,False,True,False,False,False,True,True,False,False
-IRAS 13349+2438,0852390101,10.542,10,-234.9,12.37,0.392,UFO,0.012,12,False,False,True,False,False,False,True,False,False,False
 NGC 5252,0152940101,10.967,10,-125.3,14.5,0.425,UFO,0.007,7,False,False,True,False,False,False,True,True,False,False
-IC 4329A,0862090201,11.631,10,-107.3,10.83,0.472,UFO,0.036,36,False,True,True,False,False,False,False,False,False,False
-IC 4329A,0862090601,9.194,10,-69.4,13.28,0.306,UFO,0.001,1,False,False,True,False,False,False,True,True,True,False
-IC 4329A,0862090601,9.549,10,-68.7,10.77,0.306,UFO,,,False,False,True,False,False,False,False,False,True,False
-IC 4329A,0862091001,11.165,100,-93.4,11.66,0.439,UFO,0.019,19,False,False,True,False,False,False,True,False,False,False
-PG 1402+261,0830470101,8.669,10,-122.1,9.51,0.215,UFO,0.07,70,False,False,True,False,False,False,False,False,False,False
 NGC 5506,0201830401,7.269,10,-27.7,11.66,0.042,UFO,0.028,28,False,False,True,False,False,False,True,False,False,False
 NGC 5506,0761220101,9.484,10,-19.9,8.82,0.299,UFO,0.08,80,False,False,True,False,False,False,False,False,False,False
 NGC 5506,0761220101,11.845,100,-71.0,8.27,0.486,UFO,0.097,97,False,True,True,False,False,False,False,False,False,False
@@ -224,21 +257,11 @@ NGC 5548,0720110701,8.124,10,-25.6,8.38,0.152,UFO,0.109,109,False,False,True,Fal
 NGC 5548,0720111201,6.828,100,-22.7,9.86,,near-systemic,0.057,57,False,False,True,False,False,False,False,False,False,False
 NGC 5548,0720111201,9.528,100,-47.4,11.0,0.303,UFO,0.047,47,False,False,True,False,False,False,True,False,False,False
 NGC 5548,0720111401,6.949,10,-22.1,10.51,,near-systemic,0.055,55,False,False,True,False,False,False,False,False,False,False
-ESO 511-30,0502090201,10.548,10,-54.9,10.43,0.392,UFO,0.033,33,False,False,True,False,False,False,True,False,False,False
-Mrk 1383,0852210101,7.221,10,-41.0,8.98,0.035,UFO,0.072,72,False,False,True,False,False,False,False,False,False,False
-SDSS J1430+2303,0893810401,10.156,10,-148.8,8.32,0.36,UFO,0.093,93,False,False,True,False,False,False,False,False,False,False
-Mrk 817,0872390901,6.969,100,-76.5,60.91,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
-Mrk 817,0872390901,8.122,10,-34.5,8.43,,near-systemic,0.13,130,False,False,True,False,True,False,False,False,False,False
-Mrk 817,0882340701,6.975,10,-40.9,18.97,,near-systemic,0.001,1,False,False,True,False,False,False,False,False,False,False
-Mrk 817,0882340801,6.917,10,-47.6,21.52,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
-Mrk 817,0911990201,7.049,100,-72.1,16.62,,near-systemic,0.001,1,False,False,True,False,False,False,False,False,False,False
-PG 1448+273,0781430101,7.288,10,-115.4,8.42,0.091,UFO,,,True,False,True,False,False,False,False,False,True,False
-PG 1448+273,0781430101,7.647,100,-186.2,11.87,0.091,UFO,0.021,21,False,False,True,False,False,False,True,False,True,False
-PG 1448+273,0781430101,9.538,10,-241.3,11.74,0.304,UFO,0.022,22,False,False,True,False,False,False,True,False,False,False
-PG 1448+273,0781430101,10.508,100,-346.8,9.09,0.389,UFO,0.074,74,False,False,True,False,False,False,False,False,False,False
-Mrk 290,0400360201,10.487,100,-179.5,8.16,0.387,UFO,0.146,146,False,False,True,False,False,False,False,False,False,False
-IRAS 17020+4544,0721220101,10.38,10,-188.6,12.43,0.378,UFO,0.013,13,False,False,True,False,False,False,True,False,False,False
-IRAS 17020+4544,0721220101,11.186,100,-281.3,10.0,0.441,UFO,0.048,48,False,False,True,False,False,False,True,False,False,False
+NGC 7213,0605800301,9.751,100,-57.8,8.64,0.324,UFO,0.096,96,True,False,True,False,False,False,False,False,False,False
+NGC 7314,0790650101,9.309,10,-42.5,11.36,0.282,UFO,0.025,25,False,False,True,False,False,False,True,False,False,False
+NGC 7469,0880550301,11.429,100,-107.9,9.85,0.458,UFO,0.048,48,False,False,True,False,False,False,True,False,False,False
+NGC 7582,0782720301,6.833,100,-57.0,53.51,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
+NGC 7582,0782720301,9.22,10,-37.5,8.24,0.273,UFO,0.111,111,False,False,True,False,False,False,False,False,False,False
 PDS 456,0721010501,9.459,500,-252.6,19.87,0.296,UFO,0.001,1,False,False,True,False,False,False,True,True,False,False
 PDS 456,0721010501,11.737,10,-142.6,9.94,0.479,UFO,0.054,54,False,True,True,False,False,False,False,False,False,False
 PDS 456,0721010301,9.276,500,-409.1,26.5,0.278,UFO,0.001,0,False,False,True,False,False,False,True,True,False,False
@@ -250,47 +273,24 @@ PDS 456,0780690301,10.62,10,-198.9,14.32,0.398,UFO,0.008,8,False,False,True,Fals
 PDS 456,0830390201,8.699,10,-133.0,14.58,0.218,UFO,0.003,3,False,False,True,False,False,False,True,True,False,False
 PDS 456,0830390401,8.985,100,-171.6,20.97,0.249,UFO,0.001,0,False,False,True,False,False,False,True,True,False,False
 PDS 456,0830390401,11.968,10,-1470.5,10.55,0.493,UFO,0.04,40,False,True,True,False,False,False,False,False,False,False
-MCG+7-37-31,0672660401,11.344,10,-318.5,13.49,0.452,UFO,0.009,9,False,False,True,False,False,False,True,True,False,False
-FAIRALL 49,0724820101,9.459,10,-50.0,21.58,0.296,UFO,0.001,0,False,False,True,False,False,False,True,True,False,False
-FAIRALL 49,0724820101,11.058,100,-75.2,10.32,0.431,UFO,0.051,51,False,False,True,False,False,False,False,False,False,False
-FAIRALL 49,0724820101,11.668,100,-111.5,12.65,0.474,UFO,0.014,14,False,True,True,False,False,False,False,False,False,False
-FAIRALL 49,0724820201,11.319,100,-110.5,11.12,0.45,UFO,0.022,22,False,False,True,False,False,False,True,False,False,False
-FAIRALL 49,0795690101,9.711,100,-70.2,8.48,0.32,UFO,0.094,94,False,False,True,False,False,False,False,False,False,False
-Zw 229-15,0672530301,7.197,10,-77.6,10.1,,near-systemic,0.058,58,False,False,True,False,False,False,False,False,False,False
-1ES 1927+654,0863230201,6.777,100,-83.1,12.05,,near-systemic,,,False,False,False,False,False,False,False,False,False,False
-1ES 1927+654,0915390701,9.538,10,-315.4,13.25,0.304,UFO,,,False,False,False,False,False,False,False,False,False,False
-CGMW 3-4394,0891010201,9.653,100,-69.7,12.81,0.315,UFO,0.009,9,False,False,True,False,False,False,True,True,False,False
-CGMW 3-4394,0891010201,10.208,100,-97.4,16.43,0.364,UFO,0.001,0,False,False,True,False,False,False,True,True,False,False
-CGMW 3-4394,0550451701,11.723,10,-515.4,13.8,0.478,UFO,0.011,11,False,True,True,False,False,False,False,False,False,False
-CGMW 3-4394,0761870201,11.34,100,-127.4,8.52,0.452,UFO,0.075,75,False,False,True,False,False,False,False,False,False,False
-CGMW 3-4394,0891010101,10.181,10,-98.3,17.43,0.362,UFO,0.004,4,False,False,True,False,False,False,True,True,False,False
-Mrk 509,0306090401,8.531,10,-26.1,11.91,0.199,UFO,0.028,28,False,False,True,False,False,False,True,False,False,False
-IGR J21277+5656,0693781701,11.263,10,-54.1,8.66,0.446,UFO,0.091,91,False,False,True,False,False,False,False,False,False,False
+PG 1126-041,0606150101,6.945,10,-122.3,27.38,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
+PG 1126-041,0606150101,7.297,10,-193.6,9.84,0.084,UFO,0.001,0,False,False,True,False,False,False,True,True,True,False
+PG 1126-041,0606150101,7.55,10,-142.3,9.84,0.084,UFO,,,False,False,True,False,False,False,False,False,True,False
+PG 1126-041,0606150101,8.146,100,-146.2,14.46,,near-systemic,0.007,7,True,False,True,False,True,False,False,False,False,False
+PG 1126-041,0606150101,8.747,100,-202.6,20.49,0.223,UFO,0.001,0,False,False,True,False,False,False,True,True,False,False
+PG 1126-041,0606150101,10.091,100,-290.3,23.04,0.354,UFO,0.001,0,False,False,True,False,False,False,True,True,False,False
+PG 1244+026,0675320101,8.547,10,-92.5,10.22,0.201,UFO,0.045,45,False,False,True,False,False,False,True,False,False,False
+PG 1244+026,0675320101,9.435,10,-141.7,15.18,0.294,UFO,0.007,7,False,False,True,False,False,False,True,True,False,False
+PG 1244+026,0744440101,9.647,10,-191.9,9.79,0.314,UFO,0.051,51,False,False,True,False,False,False,False,False,False,False
+PG 1244+026,0744440501,7.588,10,-135.2,22.19,0.085,UFO,0.001,0,False,False,True,False,False,False,True,True,False,False
+PG 1402+261,0830470101,8.669,10,-122.1,9.51,0.215,UFO,0.07,70,False,False,True,False,False,False,False,False,False,False
+PG 1448+273,0781430101,7.288,10,-115.4,8.42,0.091,UFO,,,True,False,True,False,False,False,False,False,True,False
+PG 1448+273,0781430101,7.647,100,-186.2,11.87,0.091,UFO,0.021,21,False,False,True,False,False,False,True,False,True,False
+PG 1448+273,0781430101,9.538,10,-241.3,11.74,0.304,UFO,0.022,22,False,False,True,False,False,False,True,False,False,False
+PG 1448+273,0781430101,10.508,100,-346.8,9.09,0.389,UFO,0.074,74,False,False,True,False,False,False,False,False,False,False
+RBS 542,0604720301,7.176,10,-29.5,12.74,,near-systemic,0.018,18,False,False,True,False,False,False,False,False,False,False
+RBS 542,0820360201,6.985,100,-55.4,18.47,,near-systemic,0.001,1,False,False,True,False,False,False,False,False,False,False
+RXS J11319-1231,0820830101,10.614,10,-77.1,13.0,0.397,UFO,0.009,9,False,False,True,False,False,False,True,True,False,False
 RXS J21359+4728,0650591701,10.504,100,-172.9,9.48,0.389,UFO,0.062,62,False,False,True,False,False,False,False,False,False,False
-NGC 7213,0605800301,9.751,100,-57.8,8.64,0.324,UFO,0.096,96,True,False,True,False,False,False,False,False,False,False
-NGC 7314,0790650101,9.309,10,-42.5,11.36,0.282,UFO,0.025,25,False,False,True,False,False,False,True,False,False,False
-MCG-03-58-007,0840230301,8.935,100,-119.2,14.36,0.243,UFO,0.004,4,False,False,True,False,False,False,True,True,False,False
-MCG-03-58-007,0840230301,9.694,100,-144.3,14.03,0.318,UFO,0.004,4,True,False,True,False,False,False,True,True,False,False
-MCG-03-58-007,0840230301,11.428,100,-308.8,15.79,0.458,UFO,0.002,2,False,False,True,False,False,False,True,True,False,False
-MCG-03-58-007,0764010101,7.314,10,-71.0,10.15,0.048,UFO,0.035,35,False,False,True,False,False,False,True,False,False,True
-MCG-03-58-007,0840230201,8.198,10,-123.5,16.77,0.161,UFO,0.001,0,False,False,True,False,False,False,True,True,False,False
-MCG-03-58-007,0840230201,10.654,100,-244.2,11.41,0.401,UFO,0.02,20,False,False,True,False,False,False,True,False,False,False
-MCG-03-58-007,0840230401,7.892,100,-160.1,29.25,0.124,UFO,0.001,0,False,False,True,False,False,False,True,True,False,False
-MCG-03-58-007,0840230401,8.556,10,-119.1,12.48,0.202,UFO,0.01,10,False,False,True,False,False,False,True,True,False,False
-MR 2251-178,0670120301,6.924,100,-19.7,19.01,,near-systemic,0.002,2,False,False,True,False,False,False,False,False,False,False
-MR 2251-178,0670120301,10.437,10,-26.6,8.25,0.416,UFO,,,False,False,True,False,False,False,False,False,True,False
-MR 2251-178,0670120301,10.848,10,-46.0,20.64,0.416,UFO,0.002,2,False,False,True,False,False,False,True,True,True,False
-MR 2251-178,0670120301,11.885,100,-65.0,11.04,0.488,UFO,0.034,34,False,True,True,False,False,False,False,False,False,False
-MR 2251-178,0012940101,6.906,10,-21.1,8.66,,near-systemic,0.121,121,False,False,True,False,False,False,False,False,False,False
-MR 2251-178,0670120201,6.784,100,-23.3,29.41,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
-MR 2251-178,0670120201,9.577,100,-27.1,10.2,0.307,UFO,0.047,47,False,False,True,False,False,False,True,False,False,False
-MR 2251-178,0670120201,10.331,10,-26.5,9.15,0.374,UFO,0.075,75,False,False,True,False,False,False,False,False,False,False
-MR 2251-178,0670120401,6.579,100,-15.5,13.69,,near-systemic,0.009,9,False,False,True,False,False,False,False,False,False,False
-MR 2251-178,0670120401,11.772,100,-52.0,9.7,0.481,UFO,0.063,63,False,True,True,False,False,False,False,False,False,False
-MR 2251-178,0763920601,6.704,10,-22.6,8.91,,near-systemic,0.08,80,False,False,True,False,False,False,False,False,False,False
-MR 2251-178,0763920701,6.634,10,-26.4,13.78,,near-systemic,0.007,7,False,False,True,False,False,False,False,False,False,False
-MR 2251-178,0763920801,6.612,10,-24.2,12.72,,near-systemic,0.017,17,False,False,True,False,False,False,False,False,False,False
-NGC 7469,0880550301,11.429,100,-107.9,9.85,0.458,UFO,0.048,48,False,False,True,False,False,False,True,False,False,False
-NGC 7582,0782720301,6.833,100,-57.0,53.51,,near-systemic,0.001,0,False,False,True,False,False,False,False,False,False,False
-NGC 7582,0782720301,9.22,10,-37.5,8.24,0.273,UFO,0.111,111,False,False,True,False,False,False,False,False,False,False
-IRAS 23226-3843,0840800501,7.954,10,-65.0,11.05,0.131,UFO,0.026,26,False,False,True,False,False,False,True,False,False,False
+SDSS J1430+2303,0893810401,10.156,10,-148.8,8.32,0.36,UFO,0.093,93,False,False,True,False,False,False,False,False,False,False
+Zw 229-15,0672530301,7.197,10,-77.6,10.1,,near-systemic,0.058,58,False,False,True,False,False,False,False,False,False,False
